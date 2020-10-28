@@ -13,7 +13,7 @@ public class ConnectionManager {
 	
 	public Connection getConnection() throws Exception {
 		try {
-			Class.forName("oracle.jdbc.driver.OracleDriverX");
+			Class.forName("oracle.jdbc.driver.OracleDriver");
 			connection =  DriverManager.getConnection(JDBC_URL, 
 							DB_USERNAME, 
 							DB_PASSWORD);
